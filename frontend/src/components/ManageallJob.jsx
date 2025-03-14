@@ -11,7 +11,7 @@ const ManageallJob = () => {
          try {
           const response = await axios.get(`http://localhost:3000/api/recruiter/deletejob/${id} `,{withCredentials:true})
           if(response.data){
-             setJobs(Jobs.filter((item)=>item._id) !== id)
+             setJobs(Jobs.filter((item)=>item._id !== id))
           }
          } catch (error) {
           console.log(error);

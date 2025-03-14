@@ -77,7 +77,7 @@ const user = useSelector((state)=>state.user.user)
                         <p className=' text-gray-500'>${job.job?.salary}</p>
                     </div>
                     <div>
-                        <Button onClick={handleApplytojob}>Apply now</Button>
+                        <Button onClick={handleApplytojob} className="hover:bg-gray-600">Apply now</Button>
                     </div>
                 </div>
                <div className='flex flex-col gap-4'>
