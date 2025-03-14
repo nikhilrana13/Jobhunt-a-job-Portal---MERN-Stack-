@@ -15,7 +15,7 @@ import { useSelector } from 'react-redux'
 
 const Myprofile = () => {
     const user = useSelector((state)=>state.user.user)
-    console.log("user",user)
+    // console.log("user",user)
   return (
     <Dialog>
     <DialogTrigger asChild>
